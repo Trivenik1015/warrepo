@@ -23,7 +23,8 @@
 
 
    - name: Extract archive
-     unarchive: src=/home/ec2-user/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/ remote_src=yes
+     #unarchive: src=/home/ec2-user/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/ remote_src=yes 
+     shell: tar -xvzf /home/ec2-user/apache-tomcat-8.5.46.tar.gz
 
    - name: deploying the application
      copy: src=/var/lib/jenkins/workspace/demooo/target/CounterWebApp.war dest=/home/ec2-user/apache-tomcat-8.5.46/webapps/
