@@ -19,7 +19,7 @@
       group: ec2-user
 
    - name: Download Tomcat
-     get_url: url=http://mirrors.koehn.com/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/
+     get_url: url=http://mirrors.koehn.com/apache/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/
 
 
    - name: Extract archive
