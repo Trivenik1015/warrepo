@@ -27,7 +27,7 @@
      shell: tar -xvzf /home/ec2-user/apache-tomcat-8.5.46.tar.gz
 
    - name: deploying the application
-     copy: src=/var/lib/jenkins/workspace/demo/target/CounterWebApp.war dest=/home/ec2-user/apache-tomcat-8.5.46/webapps/
+     copy: src=/var/lib/jenkins/workspace/Demo/target/CounterWebApp.war dest=/home/ec2-user/apache-tomcat-8.5.46/webapps/
   
    
    - name: start apache-tomcat-8.5.46/
