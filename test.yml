@@ -19,15 +19,15 @@
       group: ec2-user
 
    - name: Download Tomcat
-     get_url: url=http://mirrors.koehn.com/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/tomcat
+     get_url: url=http://mirrors.koehn.com/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/
 
 
    - name: Extract archive
-     unarchive: src=/home/ec2-user/tomcat/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/tomcat remote_src=yes
+     unarchive: src=/home/ec2-user/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/ remote_src=yes
 
    - name: deploying the application
-     copy: src=/var/lib/jenkins/workspace/demooo/target/CounterWebApp.war dest=/home/ec2-user/tomcat/apache-tomcat-8.5.46/webapps/
+     copy: src=/var/lib/jenkins/workspace/demooo/target/CounterWebApp.war dest=/home/ec2-user/apache-tomcat-8.5.46/webapps/
   
    
    - name: start apache-tomcat-8.5.46/
-     command: sh /home/ec2-user/tomcat/apache-tomcat-8.5.46/bin/startup.sh
+     command: sh /home/ec2-user/apache-tomcat-8.5.46/bin/startup.sh
