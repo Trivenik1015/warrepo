@@ -19,7 +19,8 @@
       group: ec2-user
 
    - name: Download Tomcat
-     get_url: url=http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.45/bin/apache-tomcat-8.5.45.tar.gz dest=/home/ec2-user/tomcat
+     get_url: url=http://mirrors.koehn.com/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz dest=/home/ec2-user/tomcat
+
 
    - name: Extract archive
      unarchive: src=/home/ec2-user/tomcat/apache-tomcat-8.5.45.tar.gz dest=/home/ec2-user/tomcat remote_src=yes
